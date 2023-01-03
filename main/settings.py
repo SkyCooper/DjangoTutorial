@@ -38,8 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
+    # myapps
     'tutorial',
     
+    # thirdpart apps
     'rest_framework',
     'corsheaders',
     'django_filters',
@@ -141,7 +143,7 @@ CORS_ALLOW_METHODS = [
     "PUT",
 ]
 
-REST_FRAMEWORK = {
+# REST_FRAMEWORK = {
     # 'DEFAULT_PAGINATION_CLASS':'rest_framework.pagination.PageNumberPagination',
     # 'PAGE_SIZE': 5,
     
@@ -157,6 +159,6 @@ REST_FRAMEWORK = {
     # search
     # 'DEFAULT_FILTER_BACKENDS': ['rest_framework.filters.SearchFilter'],
 
-    # filter + search
-    # 'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend', 'rest_framework.filters.SearchFilter'],
-}
+    # filter + search + ordering
+    # 'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend', 'rest_framework.filters.SearchFilter', 'rest_framework.filters.OrderingFilter'],
+# }

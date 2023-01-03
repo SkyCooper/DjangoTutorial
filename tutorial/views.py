@@ -18,7 +18,7 @@ class TutorialMVS(ModelViewSet):
   serializer_class = TutorialSerializer
   
   #? pagination
-  pagination_class = CustomPageNumberPagination
+  # pagination_class = CustomPageNumberPagination
   # pagination_class = CustomLimitOffsetPagination
   # pagination_class = CustomCursorPagination
   
@@ -27,8 +27,8 @@ class TutorialMVS(ModelViewSet):
   filterset_fields = ["id", "title"]
   
   #? search
-  # search_fields = ["title"]
-  search_fields=['^title']  #* baş harfine göre arama yapmak için,
-  ordering_fields = ['id']  #* filter boxta hangi seçenekler çıksın istiyorsanız onu yazıyorsunuz
-  ordering = ['-title']  #* default olarak ilk açıldığında buraya yazdığımıza göre sıralıyor
+  search_fields = ["title"]
+  # search_fields=['^title']  #* baş harfine göre arama yapmak için,
+  # ordering_fields = ['id']  #* filter boxta hangi seçenekler çıksın istiyorsanız onu yazıyorsunuz
+  # ordering = ['-title']  #* default olarak ilk açıldığında buraya yazdığımıza göre sıralıyor
   
