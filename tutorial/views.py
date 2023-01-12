@@ -31,4 +31,3 @@ class TutorialMVS(ModelViewSet):
   # search_fields=['^title']  #* baş harfine göre arama yapmak için,
   # ordering_fields = ['id']  #* filter boxta hangi seçenekler çıksın istiyorsanız onu yazıyorsunuz
   # ordering = ['-title']  #* default olarak ilk açıldığında buraya yazdığımıza göre sıralıyor
-  
